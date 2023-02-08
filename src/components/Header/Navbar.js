@@ -95,14 +95,24 @@ const Navbar = () => {
       <ul
         className={!nav ? "hidden" : "absolute z-10 my-8 bg-white w-full px-8"}
       >
-        {/* <div className="grid grid-cols-2 pt-4">
-        <MobileCompany />
+        <div className="grid grid-cols-2 pt-4">
+        <a href="#health" className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium">Company</a>
+          <a href="#product" className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium">Product</a>
+          {/* <Link to="" className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium">Resources</Link> */}
+          <Link
+          className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium"
+          to='/labs'
+          >
+           
+            Labs
+            </Link>
+        {/* <MobileCompany />
           <MobileProduct texts="Product" />
          
           <MobileResources texts="Resources" />
-          <MobileLabs texts="Labs" />
+          <MobileLabs texts="Labs" /> */}
           
-        </div> */}
+        </div>
       
       </ul>
     </div>
