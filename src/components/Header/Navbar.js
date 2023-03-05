@@ -25,29 +25,12 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex justify-center items-center">
-          {/* <Link
-            className={`font-medium text-[#819B9B] md:block hidden text-base   hover:text-my-dark duration-300 px-3 relative`}
-            to="/"
-          >
-            {["home"].every((ai) => pathnames.includes(ai)) && (
-              <div className="absolute bottom-0 left-5 w-[28px]   border-[1px] border-[#819B9B]"></div>
-            )}
-            <div
-              className={`${
-                ["home"].every((ai) => pathnames.includes(ai))
-                  ? "text-[#819B9B] "
-                  : "text-black"
-              }  `}
-            >
-              {" "}
-              Home
-            </div>
-          </Link> */}
+          
     <div className="hidden md:block w-full ">
 
           <a href="#health" className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium">Company</a>
           <a href="#product" className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium">Product</a>
-          {/* <Link to="" className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium">Resources</Link> */}
+
           <Link
           className="group inline-flex text-[#819B9B] items-center rounded-md bg-none px-3 py-2 text-base font-medium"
           to='/labs'
@@ -56,34 +39,9 @@ const Navbar = () => {
             Labs
             </Link>
           </div>
-          {/* <MenuCompany text="Company" /> */}
-          {/* <MenuProduct text="Product" /> */}
-         
-          {/* <MenuResources text="Resources" />
-          <MenuLabs text="Labs" /> */}
+        
         </div>
-        {/* <div className="hidden md:flex justify-between items-center gap-4">
-          <a
-            href="https://app.vella.finance"
-            target="_blank"
-            rel="noreferrer"
-            className="border-none px-10 rounded-md py-3 text-[#BF125D] bg-[#FFEEF5] "
-            whileHover={{
-              scale: 1.1,
-              textShadow: "0px 0px 8px rgb(255,255,255)",
-            }}
-          >
-            Sign in
-          </a>
-          <a
-            href="https://app.vella.finance/register"
-            target="_blank"
-            rel="noreferrer"
-            className="px-10 rounded-md py-3 text-white bg-[#BF125D]"
-          >
-            Sign up
-          </a>
-        </div> */}
+      
         <div className="md:hidden" onClick={handleClick}>
           {!nav ? (
             <MenuIcon className="w-5 text-[#344054]" />
@@ -106,11 +64,7 @@ const Navbar = () => {
            
             Labs
             </Link>
-        {/* <MobileCompany />
-          <MobileProduct texts="Product" />
-         
-          <MobileResources texts="Resources" />
-          <MobileLabs texts="Labs" /> */}
+
           
         </div>
       
